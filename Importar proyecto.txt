@@ -1,0 +1,1 @@
+click derecho --> import --> maven --> Existing Maven Projects --> Seleccionar carpeta y finish
