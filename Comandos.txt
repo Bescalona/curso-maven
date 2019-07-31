@@ -1,0 +1,26 @@
+Base 
+mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.bescalona.app -DartifactId=simple-app2
+
+Para que no pregunte por configuración 
+mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.bescalona.app -DartifactId=simple-app2 -DinteractiveMode=false
+
+Para crear un Proyecto con una estructura web
+mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.bescalona.app -DartifactId=simple-app3 -DinteractiveMode=false –DarchetypeArtifactId=maven-archetype-webapp
+
+Compilar proyecto 
+mvn compile (en la carpeta del proyecto)
+
+Generar ejecutable
+mvn package (en la carpeta del proyecto)
+
+Ejecutar el proyecto
+java -cp simple-app-1.0-SNAPSHOT.jar com.bescalona.app.App (dentro de target)
+
+Remover la carpeta target
+mvn clean (en la carpeta del proyecto)
+
+Remover todo aquello que no es propio de maven y que eclipse agrego 
+mvn eclipse:clean
+
+Acondicionar el proyecto maven para que lo reconozca eclipse como un proyecto clásico (no-maven) NO RECOMENDADO 
+mvn eclipse:eclipse 
